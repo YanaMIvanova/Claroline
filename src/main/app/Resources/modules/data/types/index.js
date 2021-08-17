@@ -23,6 +23,8 @@ function getTypes() {
       // validate type def
       checkPropTypes(DataType.propTypes, defaultedType, 'prop', `DataType<${defaultedType.name}>`)
 
+      console.log('defaultedType.name', defaultedType.name)
+      console.log('defaultedType', defaultedType)
       return defaultedType
     })
   )

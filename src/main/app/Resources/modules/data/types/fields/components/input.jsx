@@ -164,6 +164,7 @@ class FieldList extends Component {
           icon="fa fa-fw fa-plus"
           label={trans('add_field')}
           callback={() => getCreatableTypes().then(types => {
+            console.log('types', types)
             this.props.showModal(MODAL_SELECTION, {
               title: trans('create_field'),
               items: types.map(type => Object.assign({}, type.meta, {name: type.name})),
